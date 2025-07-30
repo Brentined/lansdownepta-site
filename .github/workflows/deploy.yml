@@ -24,13 +24,6 @@ jobs:
           server-dir: ./
           local-dir: ./
           exclude: |
-            .git*
-            **/.git*
-            .github*
-            **/.github*
-            .ftpignore
-            .gitignore
-            .cpanel.yml
-            README.md
-            **/.DS_Store
-            **/*.log
+              .git/
+              .github/
+              .ftpignore
