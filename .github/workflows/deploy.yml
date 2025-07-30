@@ -23,7 +23,3 @@ jobs:
           protocol: ftps
           server-dir: ./
           local-dir: ./
-          exclude: |
-              .git/
-              .github/
-              .ftpignore
