@@ -1,6 +1,7 @@
 ---
 deployment:
   tasks:
-    - export DEPLOYPATH=/home/lashbmu/public_html
-    - echo "Deploying to $DEPLOYPATH"
-    - /bin/cp -r * $DEPLOYPATH
+    - echo "Starting deployment..."
+    - rsync -av --exclude=".git*" --exclude=".cpanel.yml" ./ /home/lashbmu/public_html/
+    - echo "Deployment complete."
+
