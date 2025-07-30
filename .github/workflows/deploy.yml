@@ -21,6 +21,6 @@ jobs:
           user: ${{ secrets.FTP_USERNAME }}
           password: ${{ secrets.FTP_PASSWORD }}
           port: 21
-          remoteDir: ./
+          remoteDir: /public_html/
           localDir: ./
           options: "--delete"
