@@ -1,0 +1,6 @@
+---
+deployment:
+  tasks:
+    - export DEPLOYPATH=/home/lashbmu/public_html
+    - echo "Deploying to $DEPLOYPATH"
+    - /bin/cp -r * $DEPLOYPATH
