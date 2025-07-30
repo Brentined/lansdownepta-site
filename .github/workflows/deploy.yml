@@ -22,3 +22,9 @@ jobs:
           password: ${{ secrets.FTP_PASSWORD }}
           server-dir: /public_html/
           protocol: ftps
+          exclude: |
+            **/.git*
+            **/.github*
+            **/.gitignore
+            **/.cpanel.yml
+            **/README.md
